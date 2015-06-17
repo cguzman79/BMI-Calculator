@@ -1,0 +1,45 @@
+/*Programmer: Chris Guzman
+  Purpose: Calculates a user's body mass index after accepting their height and weight as inputs.*/
+  
+#include <iostream>
+#include <cmath>
+#include <iomanip>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    //Variable Declaration.//
+    double weight=0.0;
+    double height=0.0;
+    double BMI=0.0;
+    
+    //Prompt User for height and weight.//
+    cout<<""<<endl;
+    cout<<"---------------Welcome to BMI Calculator------------------"<<endl;
+    cout<<""<<endl;cout<<""<<endl;
+    cout<<"Please enter your height (in inches): ";
+    cin>>height;cout<<""<<endl;
+    cout<<"Please enter your weight (in pounds): ";
+    cin>>weight;cout<<""<<endl;cout<<""<<endl;
+    
+    //Calculate Body Mass Index.//
+    BMI=(weight*703)/(height*height);
+    
+    //Display outputs.//
+    cout<<""<<endl;cout<<""<<endl;cout<<""<<endl;cout<<""<<endl;cout<<""<<endl;
+    cout<<"As determined by the Department of Health and Human Services:"<<endl;
+    cout<<""<<endl;cout<<""<<endl;
+    cout<<"\tBMI VALUES"<<endl;cout<<""<<endl;cout<<""<<endl;
+    cout<<"\tUnderweight:\tless than 18.5"<<endl;cout<<""<<endl;
+    cout<<"\tNormal:\t        between 18.5 and 24.9"<<endl;cout<<""<<endl;
+    cout<<"\tOverweight:\tbetween 25 and 29.9"<<endl;cout<<""<<endl;
+    cout<<"\tObese:\t        30 or greater"<<endl;cout<<""<<endl;cout<<""<<endl;
+    cout<<" Your Body Mass Index is: "<<BMI<<"."<<endl;cout<<""<<endl;
+    cout<<""<<endl;cout<<""<<endl;cout<<""<<endl;cout<<""<<endl;cout<<""<<endl;
+    cout<<""<<endl;cout<<""<<endl;
+    
+    system("pause");
+    return 0;
+}//end main().//
